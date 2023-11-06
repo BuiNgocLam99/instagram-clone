@@ -76,7 +76,7 @@ const closeOverlay = () => {
             <div class="flex items-center justify-between w-full rounded-t-xl p-3 border-b border-b-gray-300">
                 <ArrowLeft :size="30" fillColor="#000000" @click="closeOverlay()" class="cursor-pointer" />
                 <div class="text-lg font-extrabold">New reel</div>
-                <button class="text-lg text-blue-500 hover:text-gray-900 font-extrabold">
+                <button @click="createPostFunc()" class="text-lg text-blue-500 hover:text-gray-900 font-extrabold">
                     Share
                 </button>
             </div>
